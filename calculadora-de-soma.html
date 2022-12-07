@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" type="image/png" href="img/img-icone.png"/> 
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+	
+	<title>Calculadora de Soma</title>
+	
+	<!--res.innerHTML = "O resultado da soma entre "+R1+" e "+R2+" é igual a x"-->
+	
+	<style>
+		body { font: 12pt Arial; magin: 0; }
+		button { font-size: 12pt; padding: 60px; background-color: #b0f5ec; }
+		resultado { background-color: grey; padding-top: 10px;  }
+		h1 {text-align: center; color: orange; }
+		p { text-align: center; }
+		section { height: 18px; width: 500px; color: black; }
+	</style>
+	
+</head>
+
+<body>
+ 
+	<div id="header">
+        <div id="logo">
+			<a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html"><img id="logoImg" src="img/img-icone.png">
+            <h1 id="tituloLogo">Jogos Inúteis de HTML</h1></a>
+        </div>
+        <div id="menu">
+            <ul class="listaMenu">
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/sobre.html">Sobre Nós</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html">Jogos</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div><br><br>
+	<hr>
+ 
+	<div>
+ 
+		<br><h1>Somando dois números</h1><br>
+		<hr><br>
+			<p>Na nossa calculadora conseguimos fazer a conta da soma de dois números. Além disso, 
+			ela informa qual é o maior número <b>inseridos por você</b> para fazer a conta, se divirta!</p>
+			<br><p style="font-family: monospace; color: red;"><b>!!! Para fazer contas com vírgula, por favor utilizar o ponto final "." !!!</b></p>
+			<br><br>
+	
+				<section id="resultado" style="background-color: #f5b0b9; display: block; margin: 0 auto;">
+		
+					<p id="res-soma">Aqui vai aparecer o resultado da sua <b>SOMA</b></p>
+		
+				</section>
+	
+				<br><br>
+				
+			<button style="display: block; margin: 0 auto;" onclick="inicio()">Iniciar a conta</button>
+			<br><br>
+	
+				<section id="maior" style="background-color: #c8a2c8; display: block; margin: 0 auto;">
+	
+					<p id="res-maior">Aqui vai aparecer qual é o <b>MAIOR</b> número que você inseriu</p>
+	
+				</section>
+				
+				<br>
+				
+				<section id="menor" style="background-color: #c8a2c8; display: block; margin: 0 auto;">
+	
+					<p id="res-maior">Aqui vai aparecer qual é o <b>MENOR</b> número que você inseriu</p>
+	
+				</section>
+				
+	<div><br><br>
+	
+	<div style="background-color: grey; color: white; text-align:center;">
+			©️ Todos os direitos reservados. 
+		</div><br><br>
+	
+	<script>
+		function inicio()
+		{
+			var num1 = window.prompt("Primeiro numero: ");
+			num1 = parseFloat(num1);
+
+			var num2 = window.prompt("Segundo  numero para somar com "+num1+": ");
+			num2 = parseFloat(num2);
+			
+			var soma = num1+num2;
+			
+			var res = window.document.getElementById('resultado')
+			window.alert("Conta: "+num1+" + "+num2+" = < "+soma+" >")
+			res.innerHTML = "Resultado da conta: [ "+num1+" ] + [ "+num2+" ] = | <b>< "+soma+" ></b> |" 
+			
+			var mais = document.getElementById('maior').innerHTML;
+			if(num1>num2){
+			document.getElementById('maior').innerHTML = "O MAIOR número é | <b>< "+num1+" ></b> |"
+			}
+			
+			var mais = document.getElementById('maior').innerHTML;
+			if(num1<num2){
+			document.getElementById('maior').innerHTML = "O MAIOR número é | <b>< "+num2+" ></b> |"
+			}
+			else{
+			document.getElementById('maior').innerHTML = "Opa, NÃO HÁ número maior, os números "+num1+" e "+num2+" são <b>< iguais ></b>";
+			}
+			
+			var meno = document.getElementById('menor').innerHTML;
+			if(num1>num2){
+			document.getElementById('menor').innerHTML = "MENOR número é | <b>< "+num2+" ></b> |"
+			}
+			
+			var meno = document.getElementById('menor').innerHTML;
+			if(num1<num2){
+			document.getElementById('menor').innerHTML = "MENOR número é | <b>< "+num1+" ></b> |"
+			}
+			else{
+			document.getElementById('menor').innerHTML = "Opa, NÃO HÁ número menor, os números "+num1+" e "+num2+" são <b>< iguais ></b>";
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" type="image/png" href="img/img-icone.png"/> 
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+	
+	<title>Respondendo</title>
+	
+	<style>
+		body { font: 12pt Arial; magin: 0; }
+		button { background-color: yellow; display: block; margin: 0 auto; font-size: 12pt; margin-bottom: 100px; margin-top: 100px; margin-bottom: 100px; padding: 50px; color: black; border-radius: 50%; }
+		button:visited { color: green; background-color: pink; }
+		button:hover { color: green; background-color: pink; }
+		h1 { text-align: center; color: blue; margin-top: 50px; }
+		h3 { text-align: center; color: grey; margin-top: 10px; margin-bottom: 50px; }
+	</style>
+	
+</head>
+
+<body>
+
+	<div id="header">
+        <div id="logo">
+			<a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html"><img id="logoImg" src="img/img-icone.png">
+            <h1 id="tituloLogo">Jogos Inúteis de HTML</h1></a>
+        </div>
+        <div id="menu">
+            <ul class="listaMenu">
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/sobre.html">Sobre Nós</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html">Jogos</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div><br><br><br>
+	
+	<div>
+	
+		<h1>Respondendo Perguntas inúteis</h1>
+		<h3>A única regra é responder todas as perguntas exatamente como se é pedido</h3><hr>
+	
+			<button onclick="inicio()">Clique para iniciar</button><hr>
+	
+	</div><br><br>
+	
+	<div style="background-color: grey; color: white; text-align:center;">
+			©️ Todos os direitos reservados. 
+		</div><br><br>
+	
+	<script>
+		function inicio()
+		{
+			var nome = window.prompt('Para comecar, me diga, qual o seu nome?')
+			var sobrenome = window.prompt('Qual é o seu sobrenome/nome da família?')
+			
+			window.alert('Olá, '+nome+' '+sobrenome+'! É um prazer te conhecer!')
+			
+			var primeiro = window.prompt('Agora, qual o dia do seu aniversário em números '+nome+'?')
+			var segundo = window.prompt('Qual é nome do mês do seu aniversário?')
+			var terceiro = window.prompt('E por último, qual o ano (aaaa) que você nasceu?')
+			
+			window.alert('Muito obrigado, '+nome+'! Agora eu sei que o seu aniversário é no dia '+primeiro+' de '+segundo+' de '+terceiro+', e eu te darei Feliz Aniversário nesse dia comemorando seu aniversário!!!')
+		
+			var pri = window.prompt('Para terminarmos, me diga, doce ou salgado?')
+			var seg = window.prompt('E agora qual '+pri+' que você mais gosta de comer? Só para te deixar com vontade pensando kkkk')
+			
+			window.alert('Esse foi o final, e quem sabe um dia te dou '+seg+' para você comer :)')
+			window.alert('Obrigado por "jogar" esse conteúdo inputil do nosso site '+nome+', espero que tenha sido indediante')
+		}
+	</script>
+
+</body>
+</html>

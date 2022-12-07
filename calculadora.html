@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/calculadora.css">
+	
+	<link rel="icon" type="image/png" href="img/img-icone.png"/> 
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+	
+	<title>Calculadora</title>
+	
+</head>
+
+<body>
+	
+	<div id="header">
+        <div id="logo">
+			<a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html"><img id="logoImg" src="img/img-icone.png">
+            <h1 id="tituloLogo">Jogos Inúteis de HTML</h1></a>
+        </div>
+        <div id="menu">
+            <ul class="listaMenu">
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/sobre.html">Sobre Nós</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html">Jogos</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div><br>
+	
+	<div class="fundo">
+		<h1>Aqui não é tão inútil, você consegue fazer contas mais legais até</h1> <br><br><br>
+		
+		<div class="calculadora">
+			<h2>Calculadora</h2>
+			<p id="resultado"></p>
+			<table>
+				<tr>
+                    <td><button class="botao" style="background-color: #f44336" onclick="clean()">C</button></td>
+                    <td><button class="botao-fora" onclick="insert('*')">x</button></td>
+					<td><button class="botao-fora" onclick="insert('/')">/</button></td>
+					<td colspan="2"><button class="botao-fora" style="width: 106px" onclick="back()">&#9003;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+					<td><button class="botao-fora" onclick="raiz()">&#8730;</button></td>
+					<td rowspan="4"><button class="botao-fora" style="height: 222px" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+					<td><button class="botao-fora" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+					<td rowspan="2"><button class="botao-fora" style="height: 106px" onclick="insert('+')">+</button></td>
+                    
+                </tr>
+                <tr>
+					<td><button class="botao" onclick="insert('00')">00</button></td>
+					<td><button class="botao" onclick="insert('0')">0</button></td>
+					<td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+			</table>
+			
+		</div>
+	</div><br><br>
+	
+	<div style="background-color: grey; color: white; text-align:center;">
+			©️ Todos os direitos reservados. 
+		</div><br><br>
+
+	<script>
+		function insert(num)
+		{
+			var numero = document.getElementById('resultado').innerHTML;
+			document.getElementById('resultado').innerHTML = numero + num;
+		}
+		function clean()
+		{
+			document.getElementById('resultado').innerHTML="";
+		}
+		function back()
+		{
+			var resultado = document.getElementById('resultado').innerHTML;
+			document.getElementById('resultado').innerHTML = resultado.substring(0,resultado.length-1);
+		}
+		function calcular()
+		{
+			var resultado = document.getElementById('resultado').innerHTML;
+			if(resultado){
+			document.getElementById('resultado').innerHTML = eval(resultado)
+			}
+			else{
+			document.getElementById('resultado').innerHTML = "Nada para calcular";
+			}
+		}
+		function raiz()
+		{
+			var resultado = document.getElementById('resultado').innerHTML;
+			if(resultado){
+			document.getElementById('resultado').innerHTML = eval(Math.sqrt(resultado))
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" type="image/png" href="img/img-icone.png"/> 
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+	
+	<title>Modificando Texto</title>
+	
+	<style>
+		body { font: 12pt Arial; background-color: #f1fbff; margin: 0; }
+		input { font-size: 12pt; padding: 10px; margin-top: 10px; background-color: #fffdf9; }
+		h1 { position: relative; margin-left: auto; margin-right: auto; padding: 10px; width: 700px; height: 40px; text-align: center; background-color: white; }
+		h2 { position: relative; margin-left: auto; margin-right: auto; padding: 10px; width: 1000px; height: 30px; text-align: center; color: grey;  margin-top: -30px; background-color: white; }
+		p { position: relative; margin-left: auto; margin-right: auto; padding: 10px; width: 1100px; height: 500px; text-align: justify; background-color: white; }
+	</style>
+	
+</head>
+
+<body>
+		
+	<div id="header">
+        <div id="logo">
+			<a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html"><img id="logoImg" src="img/img-icone.png">
+            <h1 id="tituloLogo">Jogos Inúteis de HTML</h1></a>
+        </div>
+        <div id="menu">
+            <ul class="listaMenu">
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/sobre.html">Sobre Nós</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html">Jogos</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div><br><br>
+		
+		<br><hr>
+		<h1 id="titulo">Colocando seu texto num "site"</h1>
+		<br><br><br>
+		<h2 id="subtitulo">Sempre quis ter uma coisa sua numa página web? Agora você pode brincar com isso!</h2>
+		<hr>
+
+		<section>
+			<br>
+			<p id="resultado">Aqui vai aparecer o seu texto que você quer colocar...</p>
+		</section>
+	
+		<input type="button" value="Clicar para alterar" style="display: block; margin: 0 auto;" onclick="inicio()">
+		<br>
+		
+		<div style="color: red; text-align:center;">
+			Qualquer conteúdo digitado aqui NÃO será PUBLICADO na web! 
+		</div><br><br>
+		
+		<div style="background-color: grey; color: white; text-align:center;">
+			©️ Todos os direitos reservados. 
+		</div><br><br>
+		
+	<script>
+		function inicio()
+		{
+			window.alert('Qualquer conteúdo digitado aqui NÃO será PUBLICADO na web! Tudo estará APENAS no SEU NAVEGADOR.')
+			
+			var testando = window.prompt('Digite o texto que deseja aparecer no site')
+			var titulando = window.prompt('Agora mude o título do site')
+			var titulandos = window.prompt('Agora mude o subtítulo do site')
+			
+			var tes = window.document.getElementById('resultado')
+			tes.innerHTML = ""+testando+""
+			var tit = window.document.getElementById('titulo')
+			tit.innerHTML = ""+titulando+""
+			var tits = window.document.getElementById('subtitulo')
+			tits.innerHTML = ""+titulandos+""
+		}
+	</script>
+
+</body>
+</html>

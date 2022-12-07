@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" type="image/png" href="img/img-icone.png"/> 
+    <link href="css/estilo.css" type="text/css" rel="stylesheet">
+	
+	<title>Botão</title>
+	
+	<style>
+		body { font: 12pt Arial; margin: 0; }
+		.botao { font-size: 10pt; padding: 10px; background-color: pink; }
+		.botao:active { color: white; background-color: red; }
+		h4 { font-size: 30pt; text-align: center; color: green; margin-top: 20px; }
+		h1 { font-family: monospace; font-size: 55px; text-align: center; color: blue; }
+		h2 { text-align: center; color: grey; }
+		.botoa { font-size: 10pt; padding: 10px; background-color: pink; }
+		.botoa:active { color: white; background-color: green; } 
+		button:visited { color: white; background-color: blue; }
+		button:hover { color: white; background-color: blue; }
+	</style>
+	
+</head>
+
+<body>
+	
+	<div id="header">
+        <div id="logo">
+			<a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html"><img id="logoImg" src="img/img-icone.png">
+            <h1 id="tituloLogo">Jogos Inúteis de HTML</h1></a>
+        </div>
+        <div id="menu">
+            <ul class="listaMenu">
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/sobre.html">Sobre Nós</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/index.html">Jogos</a></li>
+                <li><a href="https://html-de-jogos-inuteis.000webhostapp.com/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div><br><br><br>
+	
+	<div class="joguinho" style="display: block; margin: 0 auto;">
+	
+			<h4>Jogo do erro</h4>
+			<h2>Encontre o botão correto<h2><hr>
+			
+			<p id="resultado"></p>
+			<br>
+			
+			<table id="items" style="position: relative; margin-left: auto; margin-right: auto;">
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="2" colspan="6"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="6"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="7"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="5" colspan="6"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="7" rowspan="4"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="4" rowspan="5"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="4" rowspan="7"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="7"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="5" colspan="6"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="4" rowspan="5"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="4" rowspan="7"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="7" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="5"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="7" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="5"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				
+				
+				<tr>
+					<td colspan="3"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="2" rowspan="7"><button class="botoa" onclick="clico()">ERRO</button></td>
+					<td rowspan="3" colspan="6"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				
+				
+				<tr>
+					<td rowspan="4" rowspan="5"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="4" rowspan="7"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="7"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="5" colspan="6"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="4" rowspan="5"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="4" rowspan="7"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="7" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="5"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="7" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="5"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="4" rowspan="5"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="4" rowspan="7"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="2" colspan="6"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="6"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" colspan="2"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="7"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td colspan="8"><button class="botao" onclick="clicou()">ERRO</button></td>
+					<td rowspan="5" colspan="6"><button class="botao" onclick="clicou()">ERRO</button></td>
+				</tr>
+			</table>
+			
+			<br><hr>
+		
+		<div style="color: red; text-align:center; font-size: 14px; width:100%;">		
+			<p>Quando você acertar qual o botão CORRETO, a página será RECARREGADA!</p>
+		</div><br><br>
+		
+		<div style="background-color: grey; color: white; text-align:center;">
+			©️ Todos os direitos reservados. 
+		</div><br><br>
+		
+	<script>
+		function clicou()
+		{
+			window.alert('Botão ERRADO, continue procurando pelo botão certo nesse jogo inútil!')
+		}
+		function clico()
+		{
+			window.alert('Você clicou no botão CERTO! Se quiser jogue de novo esse jogo inútil')
+			window.location.reload();
+		}
+		
+		(function()
+		{
+		/**
+		* Deixar os itens do array em ordem aleatoria
+		*/
+		Array.prototype.shuffle = function() {
+		var i = this.length, j, tempi, tempj;
+		if ( i == 0 ) return this;
+		while ( --i ) {
+			j       = Math.floor( Math.random() * ( i + 1 ) );
+			tempi   = this[i];
+			tempj   = this[j];
+			this[i] = tempj;
+			this[j] = tempi;
+		}
+		return this;
+		}
+
+		/**
+		* Inicialização das variaveis
+		*/
+		var items = document.getElementById('items'),
+			lis = items.getElementsByTagName('tr'),
+			arr = [],
+			max = lis.length;
+
+		/**
+		* Colocando o html colection em um array
+		*/
+		for( var i = 0; i<max; i++ ){
+			arr[i] = lis[i];
+		}
+		arr = arr.shuffle();
+
+		/**
+		* Removendo os items
+		*/
+		while (items.firstChild) {
+			items.removeChild(items.firstChild);
+		}
+
+		/**
+		* Inserindo novamente no DOM
+		*/
+		while( i-- ){
+			items.appendChild( arr[i] );
+		}
+		})();
+	</script>
+
+</body>
+</html>
